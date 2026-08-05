@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: CampusRide
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:campusride}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:aimt090106}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+jwt:
+  # Secret for signing JWT tokens. It is recommended to use at least 256 bits, this is a placeholder.
+  secret: ${JWT_SECRET:8f434316dbe45fc68c5b9e072b22596ab84ef00d23cbfae656d78709335f60fe}
+  expiration: 86400000 # 1 day in ms
+
+logging:
+  level:
+    org.springframework.web: INFO
+    com.campusride: DEBUG
+    org.hibernate.SQL: DEBUG
