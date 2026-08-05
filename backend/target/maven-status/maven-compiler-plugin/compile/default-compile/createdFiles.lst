@@ -7,6 +7,7 @@ com\campusride\entity\enums\RideRequestStatus.class
 com\campusride\repository\RideRepository.class
 com\campusride\config\SecurityConfiguration.class
 com\campusride\dto\RegisterRequest.class
+com\campusride\config\DataInitializer.class
 com\campusride\dto\AuthenticationRequest.class
 com\campusride\dto\AuthenticationRequest$AuthenticationRequestBuilder.class
 com\campusride\entity\Ride$RideBuilder.class
@@ -29,6 +30,7 @@ com\campusride\entity\User.class
 com\campusride\repository\MessageRepository.class
 com\campusride\dto\MessageDto.class
 com\campusride\dto\RideRequestDto.class
+com\campusride\exception\GlobalExceptionHandler.class
 com\campusride\entity\User$UserBuilder.class
 com\campusride\controller\RideController.class
 com\campusride\entity\RideRequest$RideRequestBuilder.class
